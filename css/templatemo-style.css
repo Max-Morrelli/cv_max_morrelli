@@ -28,13 +28,17 @@ body
 #about .fp-slide,
 #about .fp-tableCell,
 
+#publications,
+#publications .fp-slide,
+#publications .fp-tableCell,
+
 #contact,
 #contact .fp-slide,
 #contact .fp-tableCell,
 
-#portfolio,
-#portfolio .fp-slide,
-#portfolio .fp-tableCell,
+#conferences,
+#conferences .fp-slide,
+#conferences .fp-tableCell,
 
 footer,
 footer .fp-slide,
@@ -54,7 +58,7 @@ h1,h2,h3,h4,h5
 /* end all heading */
 
 /* start all section */
-#work, #about, #portfolio, #contact
+#work, #about, #publications, #conferences, #contact
     {
         padding-top: 100px;
         padding-bottom: 120px;
@@ -271,7 +275,7 @@ h1,h2,h3,h4,h5
     }
 #about .text-top
     {
-        padding-top: 50px;
+        padding-top: 25%;
     }
 #about span
     {
@@ -287,23 +291,66 @@ h1,h2,h3,h4,h5
     }
 /* end about */
 
-/* start portfolio */
-#portfolio
+/* start publications */
+#publications
+{
+    background: #1a1a1a;
+}
+#publications h2
+{
+    text-align: center;
+}
+
+#publications .media
+{
+    margin-top: 30px;
+}
+
+#publications .media .fa
+{
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    color: #D43F52;
+    font-size: 24px;
+    margin-right: 24px;
+    width: 60px;
+    height: 60px;
+    line-height: 55px;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.4s ease-in;
+}
+#publications .media .fa:hover
+{
+    background: #ffffff;
+    cursor: pointer;
+}
+#publications .media .media-heading
+{
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+/* end publications */
+
+
+/* start conferences */
+#conferences
     {
         background: #1a1a1a;
         text-align: center;
     }
-#portfolio h2
+#conferences h2
     {
         padding-bottom: 30px;
     }
-#portfolio .portfolio-thumb
+#conferences .conferences-thumb
     {
         overflow: hidden;
         position: relative;
         margin-bottom: 30px;
     }
-#portfolio .portfolio-thumb .portfolio-overlay
+#conferences .conferences-thumb .conferences-overlay
     {
         background: #D43F52;
         top: 0;
@@ -317,13 +364,13 @@ h1,h2,h3,h4,h5
         padding-top: 60px;
         transition: all 0.4s ease-in-out;
     }
-#portfolio .portfolio-thumb:hover .portfolio-overlay
+#conferences .conferences-thumb:hover .conferences-overlay
     {
         cursor: pointer;
         opacity: 0.8;
         transform: scale(0.9);
     }
-/* end portfolio */
+/* end conferences */
 
 /* start contact */
 
